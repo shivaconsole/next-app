@@ -6,6 +6,7 @@ import Datatable from './Datatable';
 import dynamic from "next/dynamic";
 
 
+
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -161,7 +162,7 @@ function Mainbody() {
                                 <div className="card mb-4">
                                     <div className="card-header">
                                         <i className="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Examples
+                                        Bar Chart Example
                                         <Chart1/>
 
 
@@ -170,16 +171,15 @@ function Mainbody() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card mb-4">
-                            <div className="card-header">
-                                <i className="fas fa-table me-1"></i>
+             
+
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
                                 DataTable Example
-                                
-                                
                             </div>
-                            <Datatable/>
-                            
-                            <div className="card-body">
+                            <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
@@ -513,7 +513,7 @@ function Mainbody() {
                                             <td>62</td>
                                             <td>2009/02/14</td>
                                             <td>$452,500</td>
-                                        </tr>
+                                        </tr>   
                                         <tr>
                                             <td>Timothy Mooney</td>
                                             <td>Office Manager</td>
@@ -664,6 +664,15 @@ function Mainbody() {
                         </div>
                     </div>
                 </main>
+                              
+                                
+                      
+                            
+                      
+                                 
+                           
+                     
+                
                 <footer className="py-4 bg-light mt-auto">
                     <div className="container-fluid px-4">
                         <div className="d-flex align-items-center justify-content-between small">
@@ -682,7 +691,9 @@ function Mainbody() {
 
 
 
+
     </>
   )
 }
+
 export default dynamic (() => Promise.resolve(Mainbody), {ssr: false})
