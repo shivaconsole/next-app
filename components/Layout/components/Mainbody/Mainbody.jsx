@@ -679,10 +679,10 @@ function Mainbody() {
             </div>
         </div>
     
-export default dynamic (() => Promise.resolve(Mainbody), {ssr: false})
 
 
 
     </>
   )
 }
+export default dynamic (() => Promise.resolve(Mainbody), {ssr: false})
