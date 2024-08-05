@@ -290,8 +290,8 @@ a > code {
 kbd {
   padding: 0.1875rem 0.375rem;
   font-size: 0.875em;
-  color: black;
-  background-color: white;
+  color: var(--bs-body-bg);
+  background-color: var(--bs-body-color);
   border-radius: 0.25rem;
 }
 kbd kbd {
@@ -316,7 +316,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #0e1011;
+  color: #6c757d;
   text-align: left;
 }
 
@@ -331,9 +331,9 @@ tfoot,
 tr,
 td,
 th {
-  border-color: blue;
+  border-color: inherit;
   border-style: solid;
-  border-width: .5;
+  border-width: 0;
 }
 
 label {
@@ -1738,19 +1738,19 @@ progress {
   }
 }
 .table, .datatable-table {
-  --bs-table-color: black;
+  --bs-table-color: var(--bs-body-color);
   --bs-table-bg: transparent;
-  --bs-table-border-color: black);
+  --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: var(--bs-body-color);
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: black;
+  --bs-table-active-color: var(--bs-body-color);
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: black);
+  --bs-table-hover-color: var(--bs-body-color);
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: black;
+  color: var(--bs-table-color);
   vertical-align: top;
   border-color: var(--bs-table-border-color);
 }
@@ -1823,7 +1823,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
-  color: black;
+  color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
@@ -1837,7 +1837,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #d1d2d4;
   --bs-table-hover-color: #000;
-  color: black;
+  color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
@@ -1851,7 +1851,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #c1d6cc;
   --bs-table-hover-color: #000;
-  color:black;
+  color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
@@ -1865,7 +1865,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfe2e9;
   --bs-table-hover-color: #000;
-  color: black;
+  color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
 
@@ -1998,7 +1998,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: black;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
