@@ -3,6 +3,7 @@ import { Bar } from 'react-chartjs-2'
 import Chart1 from './Chart1';
 import Chart2 from './Chart2';
 import Datatable from './Datatable';
+import dynamic from "next/dynamic";
 
 
 import {
@@ -24,7 +25,7 @@ import {
     Legend
   );
 
-export default function Mainbody() {
+function Mainbody() {
   return (
     <>
       
@@ -150,7 +151,7 @@ export default function Mainbody() {
                                     <div className="card-header">
                                         <i className="fas fa-chart-area me-1"></i>
 
-                                        Area Chart Example
+                                        Area Chart Examples
                                         <Chart2/>
                                     </div>
                                     <div className="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
@@ -160,7 +161,7 @@ export default function Mainbody() {
                                 <div className="card mb-4">
                                     <div className="card-header">
                                         <i className="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Example
+                                        Bar Chart Examples
                                         <Chart1/>
 
 
@@ -678,7 +679,7 @@ export default function Mainbody() {
             </div>
         </div>
     
-
+export default dynamic (() => Promise.resolve(Mainbody), {ssr: false})
 
 
 
